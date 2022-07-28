@@ -88,8 +88,10 @@ def main():
                 continue
             if userWord not in POSSIBLE_WORDS:
                 print('Unknown word')
+                continue
             if userWord in alreadyGuessed:
                 print('Already guessed')
+                continue
             alreadyGuessed.add(userWord)
 
             colors = getColors(randomWord, userWord)
